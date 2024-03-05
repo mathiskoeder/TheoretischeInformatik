@@ -3,7 +3,7 @@ def algo(x):
     y=1
     z=0
     while(x>0):
-        print(y)
+        print(str(z)+" - "+str(y))
         a=y
         while(a>0):
             a-=1
