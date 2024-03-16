@@ -12,13 +12,13 @@ nextto(X,Y,[H|[N|T]]):-
 
 delete(X,[H|[]],N):-
     ((X\=H,
-    N=[H]);
+    N=[H],!);
     (X=H)).
 
 delete(X,[H|T],N):-
     delete(X,T,L),
     ((X\=H,
-    N=[H|L]);
+    N=[H|L],!);
     (X=H,
     N=L)).
 
