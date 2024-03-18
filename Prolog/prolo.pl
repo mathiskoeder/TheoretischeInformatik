@@ -16,13 +16,11 @@ karte(Alu, Beka, Cera, Dola, Erito, Faku, Gela, Hora, Iona):-
     n(Faku,Gela),
     n(Faku,Hora),
     Cera = rot,
-    Hora = blau,
-    Iona = rot.
+    Hora = blau. 
 
 farbe(rot).
 farbe(blau).
-farbe(rot).
-farbe(ocker).
+farbe(gruen).
 
 n(X,Y):-
     farbe(X),
